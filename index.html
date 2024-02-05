@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layback Surfcamp</title>
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
-        <div w3-include-html="content.html"></div>
+
+<body onload="includeHTML()">
+    <header w3-include-html="templates/header.html">
+
     </header>
+    <section class="aot">
+        <img src="img/index/aot-img.jpg" alt="Banner Foto" class="aot-img">
+        <h1 class="heading">Layback Intermediate Surfcamp</h1>
+    </section>
+    <main>
+        <section class="description-container container">
+            <h2 class="special-heading">Europas erstes Intermediate Surfcamp für fortgeschrittene Surfer</h2>
+            <p>Du hast bereits einige Erfahrungen im Surfen gemacht und möchtest deine Surftechnik auf das nächste Level
+                bringen? Mit unserem Intermediate Surfcamp in Galicien wirst Du schon bald keine Probleme mehr haben, einen
+                sauberen Bottom Turn oder Cutback in der Welle zu ziehen. In kleinen Gruppen, inklusive Videoanalyse und
+                Bewegungstheorie, bringen Dich unsere erfahrenen Surfcoaches schnell an Dein neues Ziel – und das in einer
+                der schönsten Regionen Nordspaniens!</p>
+        </section>
+
+        <section class="options-container">
+            <div class="option-box">
+                <img src="img/index/intermediate-box.jpg" alt="intermediate surfcamp box" class="box-image">
+                <h3 class="box-heading">Intermediate Surfcamp</h3>
+            </div>
+            <div class="option-box">
+                <img src="img/index/spotguiding-banner.jpg" alt="spotguding box" class="box-image">
+                <h3 class="box-heading">Spotguding</h3>
+            </div>
+            <div class="option-box">
+                <img src="img/index/pipe-room.jpg" alt="unterkunft box" class="box-image">
+                <h3 class="box-heading">Unterkunft</h3>
+            </div>
+        </section>
+    </main>
+    
 </body>
+
 </html>
