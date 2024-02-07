@@ -7,10 +7,11 @@
     <title>Layback Surfcamp</title>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
+    <script src="imageJson.js"></script>
     <script src="script.js" defer></script>
 </head>
 
-<body onload="includeHTML()">
+<body onload="init()">
     <header w3-include-html="templates/header.html">
 
     </header>
@@ -22,28 +23,106 @@
         <section class="description-container container">
             <h2 class="special-heading">Europas erstes Intermediate Surfcamp für fortgeschrittene Surfer</h2>
             <p>Du hast bereits einige Erfahrungen im Surfen gemacht und möchtest deine Surftechnik auf das nächste Level
-                bringen? Mit unserem Intermediate Surfcamp in Galicien wirst Du schon bald keine Probleme mehr haben, einen
+                bringen? Mit unserem Intermediate Surfcamp in Galicien wirst Du schon bald keine Probleme mehr haben,
+                einen
                 sauberen Bottom Turn oder Cutback in der Welle zu ziehen. In kleinen Gruppen, inklusive Videoanalyse und
-                Bewegungstheorie, bringen Dich unsere erfahrenen Surfcoaches schnell an Dein neues Ziel – und das in einer
+                Bewegungstheorie, bringen Dich unsere erfahrenen Surfcoaches schnell an Dein neues Ziel – und das in
+                einer
                 der schönsten Regionen Nordspaniens!</p>
         </section>
 
         <section class="options-container">
             <div class="option-box">
-                <img src="img/index/intermediate-box.jpg" alt="intermediate surfcamp box" class="box-image">
+                <img src="img/index/intermediate-box.jpg" alt="intermediate surfcamp box" class="box-image zoom">
                 <h3 class="box-heading">Intermediate Surfcamp</h3>
             </div>
             <div class="option-box">
-                <img src="img/index/spotguiding-banner.jpg" alt="spotguding box" class="box-image">
+                <img src="img/index/spotguiding-banner.jpg" alt="spotguding box" class="box-image zoom">
                 <h3 class="box-heading">Spotguding</h3>
             </div>
             <div class="option-box">
-                <img src="img/index/pipe-room.jpg" alt="unterkunft box" class="box-image">
+                <img src="img/index/pipe-room.jpg" alt="unterkunft box" class="box-image zoom">
                 <h3 class="box-heading">Unterkunft</h3>
             </div>
         </section>
+
+        <section class="offer-container container">
+            <h4 class="heading-with-underline">Wir bieten...</h2>
+                <ul class="styled-list">
+                    <li>Europas erstes speziell auf fortgeschrittene Surfer ausgelegtes Surfcamp</li>
+                    <li>eine Vielzahl an leeren, einsamen Stränden (optimal, um eure Surfskills gezielt zu verfeinern)
+                    </li>
+                    <li>ein auf Deine bisherigen Erfahrungen zugeschnittenes Surfcoaching, mit täglicher Videoanalyse,
+                        Bewegungstheorie und Surfskatesessions</li>
+                    <li>kleine Gruppen (max. 5 Personen auf einen Coach) mit intensiver Betreuung</li>
+                    <li>professionelle und erfahrene ISA/ASI lizensierte Surfcoaches</li>
+                    <li>Spotguiding und Transfer zu mehr als acht verschiedenen Buchten</li>
+                    <li>konstante Surfbedingungen und leere Line-Ups während der gesamten Saison in einer der schönsten
+                        Regionen Nordspaniens</li>
+                    <li>ein schönes Camphaus mit familiärer Atmosphäre in dem kleinen Strandort Valdoviño in Galicien
+                    </li>
+                    <li>zu Fuß erreichbarer Hausstrand</li>
+                    <li>kostenlose Nutzung der Surfboards und Wetsuits 24/7</li>
+                    <li>eine große Terrasse mit BBQ-Grill</li>
+                    <li>Gemütliches Wohnzimmer mit Pelletofen zum Aufwärmen nach den Sessions</li>
+                    <li>großer Garten mit Lagerfeuerstelle und Hängematte, um den Tag gemütlich ausklingen zu lassen
+                    </li>
+                    <li>große und helle Zwei- und Mehrbettzimmer</li>
+                    <li>verschiedene Chill-Out Areas zum Entspannen</li>
+                    <li>üppiges und gesundes Frühstück</li>
+                    <li>Saison vom 23. März bis zum 20. Oktober 2024</li>
+                </ul>
+                <a href="#"><button class="btn">jetzt anfragen</button></a>
+        </section>
+
+        <section class="blog-container flex justify-content-center align-items-center">
+            <div class="blog-image-box flex">
+                <img src="img/index/blog-img.jpg"
+                    alt="Bild aus Blog: 8 Gründe, warum du ein Intermediate Surfcoaching absolvieren solltest"
+                    class="box-image zoom">
+            </div>
+            <div class="blog-description-box">
+                <div class="w-80 flex flex-column justify-content-start gap-3">
+                    <p class="subheadline">Layback Blog</p>
+                    <a href="#" class="blog-link">8 Gründe, warum Du ein Intermediate Surfcoaching absolvieren
+                        solltest</a>
+                    <p>Du hast schon einige Surf-Erfahrung gesammelt und fragst Dich jetzt: Sollte ich wirklich an einem
+                        Intermediate Surfcoaching teilnehmen? Hier erfährst Du, warum das Sinn macht…</p>
+                    <a href="#" class="blog-link-more">Mehr erfahren</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="surf-with-friends-container container">
+            <h4 class="heading-with-underline">Surf with friends</h4>
+            <p>Das ist unsere Philosophie und so sollte es in einem Surfcamp auch sein. Wir (eure Surfcoaches) leben mit
+                euch unter einem Dach und stehen euch jederzeit zur Seite – so könnt ihr so schnell wie möglich
+                Fortschritte bei euren Surfskills machen und euer Ziel mit größtmöglichsten Spaß schnell erreichen.
+                Unser schönes familiäres Camphaus in dem kleinen Strandort Valdoviño in Galicien liegt fernab vom
+                Massen- und Surftourismus und bietet eine Vielzahl an verschiedenen Buchten mit hervorragenden Wellen
+                und leeren Line-Ups. Mit unserem Spotguiding bringen wir euch jeden Tag zu dem Strand, an dem ihr die
+                meisten Fortschritte machen werdet. Und falls ihr nach den Sessions immer noch nicht genug habt, könnt
+                ihr an unserem Haustrand in Valdoviño eure letzten Energiereserven verbrauchen oder die Füße gemütlich
+                im Camp oder in unserem großen Garten hochlegen.</p>
+        </section>
+
+        <section class="slide-container container">
+            <div class="slider" id="slider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="arrow-icon arrow-left" id="arrow-left" viewBox="0 0 16 16" onclick="previousPhoto(indexSlider)">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                </svg>
+                <img src="img/index/slider/img1.jpg" alt="" class="slider-image" id="sliderImage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="arrow-icon arrow-right" id="arrow-right" viewBox="0 0 16 16" onclick="nextPhoto(indexSlider)">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </div>
+        </section>
     </main>
-    
+
 </body>
 
 </html>
