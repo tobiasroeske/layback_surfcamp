@@ -1,8 +1,9 @@
 let sliderIndex = 0;
+let slideShowInterval;
 
-async function init() {
+async function init(slider) {
     await includeHTML();
-    startSlideShow(indexSlider);
+    startSlideShow(slider, 'sliderImage');
 }
 
 async function includeHTML() {
@@ -19,9 +20,9 @@ async function includeHTML() {
     }
 }
 
-function nextPhoto(slider) {
+function nextPhoto(slider, id) {
     sliderIndex++
-    let sliderImage = document.getElementById('sliderImage');
+    let sliderImage = document.getElementById(id);
     sliderImage.src = slider[sliderIndex]['path'];
     sliderImage.setAttribute('alt', `${slider[sliderIndex]['alt-text']}`);
     if (sliderIndex == slider.length - 1) {
@@ -29,21 +30,35 @@ function nextPhoto(slider) {
     }
 }
 
-function previousPhoto(slider) {
+function previousPhoto(slider, id) {
     if (sliderIndex == 0) {
         sliderIndex = slider.length - 1;
 
     } else {
         sliderIndex--
     }
-    let sliderImage = document.getElementById('sliderImage');
+    let sliderImage = document.getElementById(id);
     sliderImage.src = slider[sliderIndex]['path'];
     sliderImage.setAttribute('alt', `${slider[sliderIndex]['alt-text']}`);
     
 }
 
-function startSlideShow(slider) {
-    nextPhoto(slider);
-    setTimeout(startSlideShow, 3000);
+function startSlideShow(slider, id) {
+    nextPhoto(slider, id);
+    slideShowInterval = setTimeout(() => startSlideShow(slider, id), 3000);
+    
+}
+
+function stopSlideShow() {
+    clearInterval(slideShowInterval);
+    openSlideshow();
+}
+
+function openSlideshow() {
+    document.getElementById('popup').classList.remove('d-none');
+}
+
+function closePopup() {
+    document.getElementById('popup').classList.add('d-none');
 }
 

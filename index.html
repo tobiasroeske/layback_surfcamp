@@ -11,10 +11,30 @@
     <script src="script.js" defer></script>
 </head>
 
-<body onload="init()">
+<body onload="init(indexSlider)">
     <header w3-include-html="templates/header.html">
 
     </header>
+
+    <div class="popup d-none" id="popup">
+        <img src="img/index/slider/close icon.svg" alt="schließ icon" class="icon"
+            onclick="closePopup(); startSlideShow(indexSlider, 'sliderImage')">
+        <div class="slider slider-popup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="arrow-icon arrow-left" id="arrow-left" viewBox="0 0 16 16"
+                onclick="previousPhoto(indexSlider, 'sliderImagePopup')">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+            </svg>
+            <img src="img/index/slider/img1.jpg" alt="" class="slider-image" id="sliderImagePopup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="arrow-icon arrow-right" id="arrow-right" viewBox="0 0 16 16"
+                onclick="nextPhoto(indexSlider, 'sliderImagePopup')">
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </div>
+    </div>
     <section class="aot">
         <img src="img/index/aot-img.jpg" alt="Banner Foto" class="aot-img">
         <h1 class="heading">Layback Intermediate Surfcamp</h1>
@@ -107,21 +127,25 @@
         </section>
 
         <section class="slide-container container">
-            <div class="slider" id="slider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="arrow-icon arrow-left" id="arrow-left" viewBox="0 0 16 16" onclick="previousPhoto(indexSlider)">
-                    <path fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
-                </svg>
-                <img src="img/index/slider/img1.jpg" alt="" class="slider-image" id="sliderImage">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="arrow-icon arrow-right" id="arrow-right" viewBox="0 0 16 16" onclick="nextPhoto(indexSlider)">
-                    <path fill-rule="evenodd"
-                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                </svg>
+            <div class="slider clickable" id="slider">
+
+                <img src="img/index/slider/img1.jpg" alt="" class="slider-image" id="sliderImage"
+                    onclick="stopSlideShow()">
+
             </div>
         </section>
+
+        <section class="container align-items-start gap-4">
+            <h4 class="heading-with-underline">Für uns ist Surfen nicht nur eine Sportart.</h4>
+            <p>Surfen ist eine Leidenschaft, Surfen ist Freundschaft, Surfen ist Freiheit und Surfen kann Dein Leben
+                völlig auf den Kopf stellen. Dir geht es ähnlich? Dann komm in unser Intermediate Surfcamp in
+                Nordspanien und genieße einen Urlaub voll mit guten Wellen, traumhaften Stränden, netten neuen Leuten
+                und einer Menge Spaß.</p>
+            <a href="#"><button class="btn">Mehr zu camp & team</button></a>
+        </section>
     </main>
+
+
 
 </body>
 

@@ -53,58 +53,63 @@ main {
   justify-content: center;
   align-items: center;
   gap: 80px;
+  margin-bottom: 120px;
 }
 
 .flex {
-  display: flex;
+  display: flex !important;
 }
 
 .flex-column {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .justify-content-center {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .justify-content-start {
-  justify-content: start;
+  justify-content: start !important;
 }
 
 .align-items-start {
-  align-items: start;
+  align-items: start !important;
 }
 
 .align-items-center {
-  align-items: center;
+  align-items: center !important;
 }
 
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .w-90 {
-  width: 90%;
+  width: 90% !important;
 }
 
 .w-80 {
-  width: 80%;
+  width: 80% !important;
 }
 
 .w-60 {
-  width: 60%;
+  width: 60% !important;
 }
 
 .gap-1 {
-  gap: 8px;
+  gap: 8px !important;
 }
 
 .gap-2 {
-  gap: 16px;
+  gap: 16px !important;
 }
 
 .gap-3 {
-  gap: 24px;
+  gap: 24px !important;
+}
+
+.gap-4 {
+  gap: 40px !important;
 }
 
 .nav-link {
@@ -167,7 +172,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 60%;
 }
 
 .special-heading {
@@ -385,6 +390,15 @@ main {
     align-items: center;
     gap: 16px;
     position: relative;
+    width: 100%;
+}
+
+.slider-popup {
+  width: 90%;
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 .arrow-icon {
@@ -410,4 +424,31 @@ main {
     height: 650px;
 }
 
+.popup {
+  background-color: black;
+  position: fixed;
+  top:0 ;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 25;
+}
+
+.d-none {
+  display: none;
+}
+
+.icon {
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 32px;
+  height: auto;
+  background-color: white;
+  border-radius: 50%;
+}
 
